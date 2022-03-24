@@ -1,0 +1,18 @@
+{
+    "title": "Пакеты NeonXP",
+    "host": "go.neonxp.dev",
+    "packages": {
+        "pkg": {
+            "pkg": "pkg",
+            "vcs": "git",
+            "repo": "https://github.com/neonxp/pkg",
+            "desc": "Сервер проксирующий собственные гошные пакеты, чтобы не зависеть от конкретного репозитория. Этот сайт."
+        },
+        "jsonrpc2": {
+            "pkg": "jsonrpc2",
+            "vcs": "git",
+            "repo": "https://github.com/neonxp/jsonrpc2",
+            "desc": "Имплементация сервера JSON-RPC 2.0 с генериками."
+        }
+    }
+}

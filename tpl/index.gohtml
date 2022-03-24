@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>{{ .Title }}</title>
+        <link rel="stylesheet" href="/static/styles.css">
+        <script type="application/javascript" src="/static/clipboard.js"></script>
+    </head>
+    <body class="Site">
+        <header class="Site-header">
+        <div class="Header">
+            <nav class="Header-nav">
+            <a href="/">
+                {{ .Title }}
+            </a>
+            </nav>
+        </div>
+        </header>
+        <main class="SiteContent SiteContent--default">
+            <article>
+                <h1>Пакеты</h1>
+                <ul>
+                {{range .Packages}}
+                    <li>
+                        <p>
+                            <b>{{ .Pkg }}</b> <a href="{{ $.Doc }}{{ $.Host }}/{{ .Pkg }}">[Документация]</a>&nbsp;<a href="{{ .Repo }}">[Репозиторий]</a>
+                        </p>
+                        <code>go get {{ $.Host }}/{{ .Pkg }}</code><a href="#" class="copyToClipboard" data-text="go get {{ $.Host }}/{{ .Pkg }}">[Скопировать]</a>
+                        <p>{{ .Description }}</p>
+                    </li>
+                {{end}}
+                </ul>
+            </article>
+        </main>
+    </body>
+</html>

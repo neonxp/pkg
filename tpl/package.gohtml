@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="go-import" content="{{ .Host }}/{{ .Package.Pkg }} {{ .Package.VCS }} {{ .Package.Repo }}">
+        <meta name="go-source" content="{{ .Host }}/{{ .Package.Pkg }} {{ .Package.Repo }} {{ .Package.Repo }}/tree/master{/dir} {{ .Package.Repo }}/tree/master{/dir}/{file}#L{line}">
+        <meta http-equiv="refresh" content="0; url={{ .Doc }}{{ .Host }}/{{ .Package.Pkg }}">
+        <title>{{ .Title }}</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body class="Site">
+        <header class="Site-header">
+        <div class="Header">
+            <nav class="Header-nav">
+            <a href="/">
+                {{ .Title }}
+            </a>
+            </nav>
+        </div>
+        </header>
+        <main class="SiteContent SiteContent--default">
+            <article>
+                <h1>{{ .Package.Pkg }}</h1>
+                <p>{{ .Package.Description }}</p>
+                Переход к <a href="{{ .Doc }}{{ .Host }}/{{ .Package.Pkg }}">документации</a>...
+           </article>
+       </main>
+    </body>
+</html>
