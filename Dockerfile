@@ -14,6 +14,6 @@ RUN apk update \
         && update-ca-certificates 2>/dev/null || true
 WORKDIR /usr/app
 COPY --from=builder /usr/src/service .
-COPY static .
-COPY tpl .
-CMD ["service"]
+COPY static ./static
+COPY tpl ./tpl
+CMD ["/usr/app/service"]
