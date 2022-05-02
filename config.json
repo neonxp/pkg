@@ -13,6 +13,24 @@
             "vcs": "git",
             "repo": "https://github.com/neonxp/jsonrpc2",
             "desc": "Имплементация сервера JSON-RPC 2.0 с генериками."
+        },
+        "collection": {
+            "pkg": "collection",
+            "vcs": "git",
+            "repo": "https://github.com/neonxp/collection",
+            "desc": "Коллекция методов для работы с коллекциями"
+        },
+        "cluster": {
+            "pkg": "cluster",
+            "vcs": "git",
+            "repo": "https://github.com/neonxp/go-cluster",
+            "desc": "p2p cluster"
+        },
+        "extra": {
+            "pkg": "extra",
+            "vcs": "git",
+            "repo": "https://github.com/neonxp/extra",
+            "desc": "Пакет с разными полезными функциями без дополнительных зависимостей."
         }
     }
 }
