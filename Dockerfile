@@ -16,4 +16,4 @@ WORKDIR /usr/app
 COPY --from=builder /usr/src/service .
 COPY static .
 COPY tpl .
-CMD ["./service"]
+CMD ["service"]
